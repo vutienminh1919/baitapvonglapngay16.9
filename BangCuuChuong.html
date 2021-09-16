@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" id="bang" style="border-collapse: collapse">
+</table>
+<SCRIPT>
+    let str = ''
+    for (let i = 1; i < 10; i++) {
+        str += "<tr>"
+        for (let j = 1; j < 10; j++) {
+            str += "<td>" + i + 'x' + j + '=' + i * j + "</td>"
+        }
+        str += "</tr>"
+    }document.getElementById('bang').innerHTML = str
+</SCRIPT>
+
+</body>
+</html>

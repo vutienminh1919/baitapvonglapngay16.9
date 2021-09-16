@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="game" value="play" onclick="game()">
+<script>
+    function game() {
+        let a = +prompt('nhap so be nhat')
+        let b = +prompt('nhap so lon nhat')
+        let c = +prompt('nhap so ban doan trong khoang tu '+ a+' den '+b)
+        let d = Math.floor(Math.random()*(b-a)+a)
+        let i=1
+        for (i=1;i<3;i++) {
+            if (c === d) {
+                alert('You Win')
+            } else {
+                alert('You Lose')
+            }
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>
