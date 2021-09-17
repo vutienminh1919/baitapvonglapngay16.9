@@ -6,9 +6,13 @@
 </head>
 <body>
 <script>
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 20; j++) {
-            document.write('*')
+    for (let i = 0; i < 7; i++) {
+        for (let j = 0; j < 20; j++) {
+            if (i === 0 || j === 0 || i === 6 || j === 19) {
+                document.write('*')
+            }else {
+                document.write('&ensp;')
+            }
         }document.write("<br>")
     }
 
