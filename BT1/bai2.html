@@ -5,11 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+
 <script>
     let a = +prompt('nhap vao nhiet do')
- while(a>100){
-        alert('hay giam nhiet do')
- }+prompt('nhap vao nhiet do')
+while(a<20||a>100) {
+    if (a < 20) {
+        alert('nhiet do qua thap')
+        a = +prompt('nhap vao nhiet do')
+    } else if (a > 100) {
+        alert('nhiet do qua cao')
+        a = +prompt('nhap vao nhiet do')
+    }
+}
+        alert('nhiet do binh thuong')
+
 
 
 </script>
